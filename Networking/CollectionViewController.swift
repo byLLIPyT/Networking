@@ -28,5 +28,15 @@ class CollectionViewController: UICollectionViewController {
         return cell
     }
     
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let userAction = userActions[indexPath.item]
+        
+        switch userAction {
+        case .downloadImage:
+            performSegue(withIdentifier: "showImage", sender: self)
+        }
+        
+    }
 
 }

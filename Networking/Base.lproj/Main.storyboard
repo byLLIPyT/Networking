@@ -62,7 +62,7 @@
                     </collectionView>
                     <navigationItem key="navigationItem" title="Main" id="69u-fl-yTN"/>
                     <connections>
-                        <segue destination="cr7-zt-JmW" kind="show" id="RRU-AV-Try"/>
+                        <segue destination="cr7-zt-JmW" kind="show" identifier="showImage" id="RRU-AV-Try"/>
                         <segue destination="sfJ-7g-7nd" kind="show" id="VWS-Ca-7Cb"/>
                     </connections>
                 </collectionViewController>
@@ -161,6 +161,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="05q-sS-Ju7"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="32B-pl-JPc" id="XoD-dN-XhO"/>
+                        <outlet property="imageView" destination="I5Z-ug-bLN" id="JzG-qA-qG5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qwY-5u-j2h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
