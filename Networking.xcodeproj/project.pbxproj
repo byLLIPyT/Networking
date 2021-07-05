@@ -17,6 +17,7 @@
 		AB7D4A8226906BD400675C52 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7D4A8126906BD400675C52 /* TableViewCell.swift */; };
 		AB7D4A8526906BE100675C52 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7D4A8426906BE100675C52 /* CollectionViewCell.swift */; };
 		AB7D4A8826906C1300675C52 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7D4A8726906C1300675C52 /* TableViewController.swift */; };
+		AB7D4A8B2690F26100675C52 /* Cource.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB7D4A8A2690F26100675C52 /* Cource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		AB7D4A8126906BD400675C52 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		AB7D4A8426906BE100675C52 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		AB7D4A8726906C1300675C52 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		AB7D4A8A2690F26100675C52 /* Cource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				AB7D4A772690688D00675C52 /* CollectionViewController.swift */,
 				AB7D4A8726906C1300675C52 /* TableViewController.swift */,
 				AB7D4A7A2690689F00675C52 /* ViewController.swift */,
+				AB7D4A8A2690F26100675C52 /* Cource.swift */,
 				AB7D4A8126906BD400675C52 /* TableViewCell.swift */,
 				AB7D4A8426906BE100675C52 /* CollectionViewCell.swift */,
 				AB7D4A662690665800675C52 /* Main.storyboard */,
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB7D4A8B2690F26100675C52 /* Cource.swift in Sources */,
 				AB7D4A8226906BD400675C52 /* TableViewCell.swift in Sources */,
 				AB7D4A8826906C1300675C52 /* TableViewController.swift in Sources */,
 				AB7D4A782690688D00675C52 /* CollectionViewController.swift in Sources */,
