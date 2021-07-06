@@ -15,15 +15,13 @@ class TableViewController: UITableViewController {
     private let jsonUrlFour = "https://swiftbook.ru//wp-content/uploads/api/api_missing_or_wrong_fields"
 
     private var coursesList = [Cource]()
-    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return coursesList.count
     }
-
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
+        
         
         cell.titleLabel.text = coursesList[indexPath.row].name
         if let numberOfLessons = coursesList[indexPath.row].number_of_lessons {
@@ -32,18 +30,10 @@ class TableViewController: UITableViewController {
         if let numberOfTests = coursesList[indexPath.row].number_of_tests {
             cell.markLabel.text = String(numberOfTests)
         }
-//        if let imageName = coursesList[indexPath.row].imageUrl, let url = URL(string: imageName) {
-//            URLSession.shared.dataTask(with: url) { (data, _, _) in
-//                if let data = data {
-//                    cell.cellImage.image = UIImage(data: data)
-//                }
-//            }
-//        }
         if let imageUrl = coursesList[indexPath.row].imageUrl, let urlImage = URL(string: imageUrl) {
             let imageData = try! Data(contentsOf: urlImage)
             cell.cellImage.image = UIImage(data: imageData)
         }
-        
         return cell
     }
     
@@ -58,7 +48,7 @@ class TableViewController: UITableViewController {
             } catch {
                 print("error")
             }
-        }.resume()        
+        }.resume()
     }
 
     func fetchDataV2() {
@@ -71,7 +61,6 @@ class TableViewController: UITableViewController {
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                 }
-                //print(courses)
             } catch {
                 print("error")
             }

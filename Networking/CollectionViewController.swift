@@ -56,6 +56,7 @@ class CollectionViewController: UICollectionViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier != "showImage" {
             let courceVC = segue.destination as! TableViewController
+            courceVC.view.backgroundColor = UIColor.blue
             switch segue.identifier {
             case "ExampleOne":
                 courceVC.fetchDataV1()
